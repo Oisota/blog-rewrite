@@ -8,6 +8,8 @@ This is a laptop stand I made completeley out of carboard.
 I wanted something to raise my laptop up and I had a bunch of boxes laying around so I decided to see what I could make with them.
 It turned out pretty well given the materials.
 
+<!--more-->
+
 <div class="centered">
 	<blockquote class="imgur-embed-pub" lang="en" data-id="a/J0oMT">
 		<a href="//imgur.com/J0oMT">CardboardLaptopStand</a>

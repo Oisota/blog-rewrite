@@ -8,6 +8,8 @@ Recently I started building a side project using [Koa](https://koajs.com/) on th
 I use [Django](https://www.djangoproject.com/) at work and I wanted an equivalent to the django template `url` tag.
 Nunjucks provides the ability to write custom tags, so I took a stab at implementing something analogous to what I've seen in Django.
 
+<!--more-->
+
 Here it is:
 ```javascript
 export function URLExtension(router) {

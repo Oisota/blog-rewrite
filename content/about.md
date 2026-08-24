@@ -1,11 +1,8 @@
 ---
-layout: page.njk
 title: About
 nav_title: About
 name: about
 index: 1
-collection:
-  - navlinks
 ---
 I am a husband, father, and software developer.
 I live in Ohio with my wife, our daughter, 2 cats and a dog.

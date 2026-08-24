@@ -1,11 +1,8 @@
 ---
-layout: index.njk
 title: Recent Articles
 nav_title: Home
 name: home
 index: 0
-collection:
-    - navlinks
 ---
 
 Here are my most recent articles.

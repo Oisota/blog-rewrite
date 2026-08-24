@@ -8,6 +8,8 @@ Here is the script I use to backup my home directory.
 Its a simple bash script that uses `tar` and `gzip` to archive and compress the files.
 I run it every few weeks and backup my data to another hard drive in my computer.
 
+<!--more-->
+
 ```bash
 #!/usr/bin/env bash
 

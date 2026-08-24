@@ -12,6 +12,8 @@ Traditional wisdom states that long functions should be broken up into separate 
 We need a facility for grouping and encapsulating code within a function.
 It should group logic together and be easy to comprehend.
 
+<!--more-->
+
 ## The Solution
 I propose adding a private scoping construct to our programming language tool belt.
 It would create a new private scope within a function that would not have access to the outer scope.

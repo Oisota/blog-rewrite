@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 $primary: #4aeeee;
 $nav-background: #1f2020;
 $body-background: #2c2e2e;
@@ -120,7 +122,7 @@ hr {
 }
 
 .alt-white-grey:nth-child(even) {
-	background-color: lighten($body-background, 4%);
+	background-color: color.adjust($body-background, $lightness: 4%);
 }
 
 /* ---- Top Bar ---- */

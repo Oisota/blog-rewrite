@@ -9,6 +9,8 @@ It makes complicated `if/else` blocks more readable in my opinion.
 When writing a conditional you can sometimes end up with several expressions that are being tested.
 It can look something like this:
 
+<!--more-->
+
 ```javascript
 if (foo > 100 && foo < 200 && bar === 'some value' && boo === 0) {
 	//do stuff

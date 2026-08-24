@@ -7,6 +7,8 @@ tags: code-style
 A while back I wrote a small JavaScript program that compared the difference between functional and imperative programming styles.
 I figured it might make an interesting blog post so here it is.
 
+<!--more-->
+
 I wanted to see how each approach would go about solving the same problem and how each solution compared in terms of readability and performance.
 The problem I chose to solve is somewhat contrived, but I think it illustrates some key differences in each approach.
 The problem being: remove all elements from an array that are less than 100, square every element, and then sum the array.

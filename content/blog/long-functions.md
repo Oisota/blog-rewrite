@@ -14,6 +14,8 @@ I don't believe this is the case.
 The length of a function should not even be considered in most cases.
 In fact, there are significant disadvantages to refactoring code into small functions.
 
+<!--more-->
+
 When I program, I don't write any functions until I absolutely need to.
 I look for at least three examples of code duplication in the code base before I even consider writing a function.
 I then make sure its a clear case of doing the exact same thing and not just mere coincidence.

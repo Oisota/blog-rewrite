@@ -9,6 +9,8 @@ Recursive descent parsing utilizes a set of mutually recursive functions to do t
 Each function handles a different production rule in the language's grammar.
 This makes implementing the parser relatively straightforward as the parser code closely resembles the grammar.
 
+<!--more-->
+
 ## Grammar
 The language we will be implementing will be a simple language consisting of variable declarations, assignment statements, and print statements.
 All variables will be integers.

@@ -1,7 +1,11 @@
 ---
 title: "Review: Zoom MS-70CDR+"
+slug: "review-zoom-ms-70cdr+"
 date: "2026-07-29"
-tags: music, guitar-pedals, review
+tags:
+	- music
+	- guitar-pedals
+	- review
 ---
 
 The Zoom MS-70CDR+ is a single pedal sized multi-effect unit with a wide variety of effects available.
@@ -9,6 +13,8 @@ The full specs can be found [here](https://zoomcorp.com/en/us/multi-effects/mult
 I bought the pedal roughly a year ago to go on my secondary pedal board.
 I've played the unit for a while and have experimented with it in multiple configurations.
 I'm currently using it at the end of my signal chain to handle reverb, delay, compression, and chorus.
+
+<!--more-->
 
 ## First Impression
 I bought the unit when I was building out my secondary pedal board to serve as a swiss army knife of effects.

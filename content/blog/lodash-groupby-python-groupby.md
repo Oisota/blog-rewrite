@@ -10,6 +10,8 @@ I needed to iterate over a list, creating a new group of items whenever a specif
 The `itertools.groupby` function in Python's standard library behaved pretty much like I expected it to and gave me the result I needed.
 After some messing around, I was able get the result I wanted by manipulating the output of `groupby` with the list comprehension below.
 
+<!--more-->
+
 ```python
 import itertools
 

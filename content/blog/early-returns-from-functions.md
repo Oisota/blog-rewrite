@@ -8,6 +8,8 @@ In general, I find it preferable to return early from functions whenever possibl
 What I mean by this is that the code in a function should try to fail as soon as possible and exit the function.
 The first thing the code should do is check whether or not its possible to continue.
 
+<!--more-->
+
 Here is an example of some python code that handles an http request.
 It does some validation and updates an object from the database.
 I would rework this as I don't find it very readable.
