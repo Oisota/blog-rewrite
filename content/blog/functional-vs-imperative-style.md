@@ -2,7 +2,8 @@
 title: Functional vs Imperative Programming
 slug: functional-vs-imperative-programming
 date: "2017-04-06"
-tags: code-style
+tags:
+	- code-style
 ---
 
 A while back I wrote a small JavaScript program that compared the difference between functional and imperative programming styles.

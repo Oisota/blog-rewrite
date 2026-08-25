@@ -10,7 +10,7 @@ const props = defineProps(['post', 'excerpt'])
 		<span class="blog-date">{{post.date}}</span>
 	</span>
 	<span class="blog-tags">
-		<a v-for="tag in post.tags" class="tag" href="/topics/{{tag.slug}}/">#{{tag.name}}</a>
+		<NuxtLink v-for="tag in post.tags" class="tag" :to="{ name: 'topics-slug', params: {slug: tag} }">#{{tag}}</NuxtLink>
 	</span>
 	<h1 class="blog-title">
 		<NuxtLink :to="{ name: 'blog-date-slug', params: {date: post.date, slug: post.slug} }">

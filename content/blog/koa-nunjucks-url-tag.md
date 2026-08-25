@@ -2,7 +2,10 @@
 title: "Nunjucks Custom URL Tag"
 slug: "nunjucks-custom-url-tag"
 date: "2026-04-15"
-tags: koa, nunjucks, javascript
+tags:
+	- koa
+	- nunjucks
+	- javascript
 ---
 
 Recently I started building a side project using [Koa](https://koajs.com/) on the backend and [Nunjucks](https://mozilla.github.io/nunjucks/) for my template engine.

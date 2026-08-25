@@ -2,7 +2,8 @@
 title: Cardboard Laptop Stand
 slug: cardboard-laptop-stand
 date: "2017-03-06"
-tags: diy
+tags:
+	- diy
 ---
 
 This is a laptop stand I made completeley out of carboard.

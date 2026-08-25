@@ -2,7 +2,10 @@
 title: Linux Backup Script
 slug: linux-backup-script
 date: "2017-01-27"
-tags: linux, shell-scripting, bash
+tags:
+	- linux
+	- shell-scripting
+	- bash
 ---
 
 Here is the script I use to backup my home directory.

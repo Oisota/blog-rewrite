@@ -2,7 +2,8 @@
 title: Return Early From Functions
 slug: return-early-from-functions
 date: "2021-05-22"
-tags: code-style
+tags:
+	- code-style
 ---
 
 In general, I find it preferable to return early from functions whenever possible.
