@@ -13,7 +13,9 @@ const props = defineProps(['post', 'excerpt'])
 		<a v-for="tag in post.tags" class="tag" href="/topics/{{tag.slug}}/">#{{tag.name}}</a>
 	</span>
 	<h1 class="blog-title">
-		<NuxtLink :to="post.path">{{post.title}}</NuxtLink>
+		<NuxtLink :to="{ name: 'blog-date-slug', params: {date: post.date, slug: post.slug} }">
+			{{post.title}}
+		</NuxtLink>
 	</h1>
 	<hr>
 	<ContentRenderer v-if="post" :excerpt="excerpt" :value="post"/>

@@ -1,5 +1,6 @@
 ---
 title: Functional vs Imperative Programming
+slug: functional-vs-imperative-programming
 date: "2017-04-06"
 tags: code-style
 ---

@@ -12,7 +12,7 @@ if (!page.value) {
 
 <template>
 	<section class="content">
-		<h1><slot name="pageTitle">{{ page.title }}</slot></h1>
+		<h1>{{ page.title }}</h1>
 		<hr />
 		<div>
 			<ContentRenderer v-if="page" :value="page"/>

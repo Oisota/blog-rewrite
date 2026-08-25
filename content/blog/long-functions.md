@@ -1,5 +1,6 @@
 ---
 title: In Defense of Long Functions
+slug: in-defense-of-long-functions
 date: 2021-10-14
 tags: code-style
 draft: true

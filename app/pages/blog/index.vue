@@ -10,7 +10,9 @@ const { data: archive } = await useAsyncData('archive', () => {
 <PageContent>
 	<div class="archive-list">
 		<div v-for="post in archive" class="hbox">
-			<NuxtLink :to="post.path">{{post.title}}</NuxtLink>
+			<NuxtLink :to="{ name: 'blog-date-slug', params: {date: post.date, slug: post.slug} }">
+				{{ post.title }}
+			</NuxtLink>
 			<span class="badge">{{post.date}}</span>
 		</div>
 	</div>

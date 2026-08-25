@@ -1,5 +1,6 @@
 ---
 title: "Programming Language Design: Private Scopes"
+slug: "programming-language-design-private-scopes"
 date: "2022-11-02"
 tags: programming-language-design
 ---

@@ -23,7 +23,9 @@ const { data: posts } = await useAsyncData('blog', () => {
 <div v-for="post in posts" class="alt-white-grey">
 	<section class="content">
 		<Post :post="post" :excerpt="true"></Post>
-		<NuxtLink :to="post.path">Continue Reading...</NuxtLink>
+		<NuxtLink :to="{ name: 'blog-date-slug', params: {date: post.date, slug: post.slug} }">
+			Continue Reading...
+		</NuxtLink>
 	</section>
 </div>
 

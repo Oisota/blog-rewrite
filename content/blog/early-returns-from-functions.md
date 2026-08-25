@@ -1,5 +1,6 @@
 ---
 title: Return Early From Functions
+slug: return-early-from-functions
 date: "2021-05-22"
 tags: code-style
 ---

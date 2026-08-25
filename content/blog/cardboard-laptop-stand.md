@@ -1,5 +1,6 @@
 ---
 title: Cardboard Laptop Stand
+slug: cardboard-laptop-stand
 date: "2017-03-06"
 tags: diy
 ---

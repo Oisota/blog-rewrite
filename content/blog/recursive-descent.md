@@ -1,5 +1,6 @@
 ---
 title: Recursive Descent Parsers
+slug: recursive-descent-parsers
 date: "2016-12-20"
 tags: tutorial, javascript
 ---

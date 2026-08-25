@@ -1,5 +1,6 @@
 ---
 title: "Nunjucks Custom URL Tag"
+slug: "nunjucks-custom-url-tag"
 date: "2026-04-15"
 tags: koa, nunjucks, javascript
 ---
