@@ -5,7 +5,7 @@ export default defineContentConfig({
   collections: {
     content: defineCollection({
       type: 'page',
-      source: '**',
+      source: '*.md',
     }),
     pages: defineCollection({
       type: 'page',
@@ -59,6 +59,18 @@ export default defineContentConfig({
 				authorEmail: z.string(),
 				url: z.string(),
 				rssUrl: z.string(),
+				description: z.string(),
+			})
+    }),
+    meta: defineCollection({
+      type: 'data',
+      source: 'meta/*.json',
+			schema: z.object({
+				name: z.string(),
+				contact: z.object(),
+				skills: z.object(),
+				education: z.object(),
+				experience: z.object(),
 			})
     }),
   },

@@ -3,5 +3,6 @@
 	"author": "Derek Morey",
 	"authorEmail": "derek.o.morey@gmail.com",
 	"url": "https://derekmorey.me/",
-	"rssUrl": "/rss.xml"
+	"rssUrl": "/rss.xml",
+	"description": "I talk about programming, woodworking, music and other things that inerest me"
 }

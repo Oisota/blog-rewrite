@@ -8,6 +8,10 @@ const { data: post } = await useAsyncData(`blog-${date}-${slug}`, () => {
   	.where('slug', '=', slug)
 	.first()
 })
+
+useHead({
+	title: post.value.title
+})
 </script>
 
 <template>
