@@ -1,7 +1,5 @@
 ---
 title: Projects
-nav_title: Projects
-name: projects
 index: 2
 ---
 

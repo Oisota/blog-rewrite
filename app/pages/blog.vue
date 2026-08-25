@@ -1,10 +1,4 @@
 <script setup lang="ts">
-const route = useRoute()
-
-const { data: page } = await useAsyncData('projects', () => {
-  return queryCollection('content').path(route.path).first()
-})
-
 const { data: archive } = await useAsyncData('archive', () => {
   return queryCollection('blog')
   	.order('date', 'DESC')
@@ -13,7 +7,7 @@ const { data: archive } = await useAsyncData('archive', () => {
 </script>
 
 <template>
-<PageContent :page="page">
+<PageContent>
 	<div class="archive-list">
 		<div v-for="post in archive" class="hbox">
 			<NuxtLink :to="post.path">{{post.title}}</NuxtLink>

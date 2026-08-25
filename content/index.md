@@ -1,7 +1,5 @@
 ---
-title: Recent Articles
-nav_title: Home
-name: home
+title: Home
 index: 0
 ---
 

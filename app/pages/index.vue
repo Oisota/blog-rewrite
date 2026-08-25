@@ -16,7 +16,7 @@ const { data: posts } = await useAsyncData('blog', () => {
 <template>
 <div class="alt-white-grey">
 	<section class="content">
-        <h1>{{ page.title }}</h1>
+        <h1>Recent Articles</h1>
 		<ContentRenderer v-if="page" :value="page"/>
 	</section>
 </div>

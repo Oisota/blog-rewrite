@@ -1,7 +1,5 @@
 ---
 title: About
-nav_title: About
-name: about
 index: 1
 ---
 I am a husband, father, and software developer.

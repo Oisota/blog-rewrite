@@ -1,13 +1,5 @@
-<script setup lang="ts">
-const route = useRoute()
-
-const { data: page } = await useAsyncData('page-' + route.path, () => {
-  return queryCollection('content').path(route.path).first()
-})
-</script>
-
 <template>
-<PageContent :page="page">
+<PageContent>
 	<form action="https://formspree.io/f/xpzbqrye" method="POST" role="form">
 		<div class="form-group">
 			<label for="name">Name: </label>
