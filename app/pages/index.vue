@@ -22,7 +22,7 @@ const { data: posts } = await useAsyncData('blog', () => {
 </div>
 <div v-for="post in posts" class="alt-white-grey">
 	<section class="content">
-		<Post :post="post" excerpt="true"></Post>
+		<Post :post="post" :excerpt="true"></Post>
 		<NuxtLink :to="post.path">Continue Reading...</NuxtLink>
 	</section>
 </div>

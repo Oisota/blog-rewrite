@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const props = defineProps(['page'])
 </script>
+
 <template>
 	<section class="content">
 		<h1><slot name="pageTitle">{{ page.title }}</slot></h1>
@@ -8,6 +9,6 @@ const props = defineProps(['page'])
 		<div>
 			<ContentRenderer v-if="page" :value="page"/>
 		</div>
-		<slot name="pageContent"></slot>
+		<slot></slot>
 	</section>
 </template>
