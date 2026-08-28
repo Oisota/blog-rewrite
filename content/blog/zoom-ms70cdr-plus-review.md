@@ -3,9 +3,9 @@ title: "Review: Zoom MS-70CDR+"
 slug: "review-zoom-ms-70cdr+"
 date: "2026-07-29"
 tags:
-	- music
-	- guitar-pedals
-	- review
+	- Music
+	- Guitar Pedals
+	- Review
 ---
 
 The Zoom MS-70CDR+ is a single pedal sized multi-effect unit with a wide variety of effects available.

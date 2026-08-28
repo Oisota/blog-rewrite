@@ -62,15 +62,24 @@ export default defineContentConfig({
 				description: z.string(),
 			})
     }),
-    meta: defineCollection({
+    resume: defineCollection({
       type: 'data',
-      source: 'meta/*.json',
+      source: 'resume/*.json',
 			schema: z.object({
 				name: z.string(),
 				contact: z.object(),
 				skills: z.object(),
 				education: z.object(),
 				experience: z.object(),
+			})
+    }),
+    tags: defineCollection({
+      type: 'data',
+      source: 'tags/*.yml',
+			schema: z.object({
+				name: z.string(),
+				slug: z.string(),
+				description: z.string(),
 			})
     }),
   },

@@ -3,9 +3,9 @@ title: "Emulating Python's groupby with Lodash"
 slug: "emulating-pythons-groupby-with-lodash"
 date: "2019-04-01"
 tags:
-	- python
-	- javascript
-	- lodash
+	- Python
+	- JavaScript
+	- Lodash
 ---
 
 I recently had to move a calculation I was doing on the back-end in Python to the front-end in JavaScript.

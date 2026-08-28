@@ -3,7 +3,7 @@ title: Assigning Boolean Expressions to Variables
 slug: assigning-boolean-expressions-to-variables
 date: "2017-12-19"
 tags:
-	- code-style
+	- Code Style
 ---
 
 This is just a design pattern I wanted to share.

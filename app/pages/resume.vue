@@ -2,8 +2,8 @@
 definePageMeta({
 	layout: 'resume'
 })
-const { data: resume } = await useAsyncData('meta', () => {
-  return queryCollection('meta').first()
+const { data: resume } = await useAsyncData('resume', () => {
+  return queryCollection('resume').first()
 })
 
 const { name, contact, experience, skills, education } = resume.value
