@@ -30,7 +30,7 @@ const { data: site } = await useAsyncData('site', () => {
     <footer class="social">
         <span v-for="link in social">
             <i :class="link.icon" class="la-lg"></i>
-            <NuxtLink :to="link.url">{{link.title}}</NuxtLink>
+            <NuxtLink :to="link.url" :external="true">{{link.title}}</NuxtLink>
         </span>
     </footer>
 </div>

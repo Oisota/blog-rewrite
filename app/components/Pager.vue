@@ -1,53 +1,52 @@
 <script setup lang="ts">
-const props = defineProps(['collection'])
+interface Pagination {
+	current: any,
+	prev: any,
+	next: any,
+	first: any,
+	last: any
+}
+const props = defineProps<Pagination>()
+const { current, prev, next, first, last } = props
+
+function disabled(current, page) {
+	if (page === null || current === null) {
+		return 'disabled'
+	}
+
+	if (current.id === page.id) {
+		return 'disabled'
+	}
+
+	return ''
+}
+
+const firstDisabled = computed(() => disabled(current, first))
+const prevDisabled = computed(() => disabled(current, prev))
+const nextDisabled = computed(() => disabled(current, next))
+const lastDisabled = computed(() => disabled(current, last))
 </script>
 
 <template>
 <div class="pager hbox">
-
-    <!-- First --> 
-    {% if collection.first -%}
-    <a href="/{{collection.first.permalink}}" title="first">
+	<!-- First -->
+	<NuxtLink :to="{name: 'blog-date-slug', params: {date: first?.date, slug: first?.slug}}" :class="firstDisabled" title="first">
         <i class="las la-angle-double-left"></i>
-    </a>
-    {% else -%}
-    <a class="disabled" title="first">
-        <i class="las la-angle-double-left"></i>
-    </a>
-    {% endif -%}
+	</NuxtLink>
 
-    <!-- Previous -->
-    {% if collection.previous.length -%}
-    <a href="/{{collection.previous[collection.previous.length-1].permalink}}" title="previous">
+	<!-- Previous -->
+	<NuxtLink :to="{name: 'blog-date-slug', params: {date: prev?.date, slug: prev?.slug}}" :class="prevDisabled" title="previous">
         <i class="las la-angle-left"></i>
-    </a>
-    {% else -%}
-    <a class="disabled" title="previous">
-        <i class="las la-angle-left"></i>
-    </a>
-    {% endif -%}
+	</NuxtLink>
 
-    <!-- Next -->
-    {% if collection.next.length -%}
-    <a href="/{{collection.next[0].permalink}}" title="next">
+	<!-- Next -->
+	<NuxtLink :to="{name: 'blog-date-slug', params: {date: next?.date, slug: next?.slug}}" :class="nextDisabled" title="next">
         <i class="las la-angle-right"></i>
-    </a>
-    {% else -%}
-    <a class="disabled" title="next">
-        <i class="las la-angle-right"></i>
-    </a>
-    {% endif -%}
+	</NuxtLink>
 
-    <!-- Last -->
-    {% if collection.last -%}
-    <a href="/{{collection.last.permalink}}" title="next">
+	<!-- Last -->
+	<NuxtLink :to="{name: 'blog-date-slug', params: {date: last?.date, slug: last?.slug}}" :class="lastDisabled" title="last">
         <i class="las la-angle-double-right"></i>
-    </a>
-    {% else -%}
-    <a class="disabled" title="last">
-        <i class="las la-angle-double-right"></i>
-    </a>
-    {% endif -%}
-
+	</NuxtLink>
 </div>
 </template>
