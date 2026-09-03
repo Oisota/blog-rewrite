@@ -1,5 +1,11 @@
 <script setup lang="ts">
 const props = defineProps(['post', 'excerpt'])
+
+const { data: tags } = await useAsyncData(`blog-${props.post.date}-${props.post.slug}-tags`, () => {
+  return queryCollection('tags')
+  	.where('name', 'IN', props.post.tags)
+	.all()
+})
 </script>
 
 <template>
@@ -10,7 +16,7 @@ const props = defineProps(['post', 'excerpt'])
 		<span class="blog-date">{{post.date}}</span>
 	</span>
 	<span class="blog-tags">
-		<NuxtLink v-for="tag in post.tags" class="tag" :to="{ name: 'topics-slug', params: {slug: tag} }">#{{tag}}</NuxtLink>
+		<NuxtLink v-for="tag in tags" class="tag" :to="{ name: 'topics-slug', params: {slug: tag.slug} }">#{{tag.name}}</NuxtLink>
 	</span>
 	<h1 class="blog-title">
 		<NuxtLink :to="{ name: 'blog-date-slug', params: {date: post.date, slug: post.slug} }">
