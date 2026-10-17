@@ -16,7 +16,7 @@ const { data: site } = await useAsyncData('site', () => {
 
 <div class="left vbox">
     <img height="130px" width="130px" src="/assets/img/me.png" alt="Me" />
-    <h1>{{site.author}}</h1>
+    <h1>{{site?.author}}</h1>
     <nav class="vbox">
 		<NuxtLink v-for="link in pages"
 			:to="link.path"
